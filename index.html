@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome Back</h1>
+        <p>Please login to your account</p>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span id="toggle-password">Show</span>
+            </div>
+            <div class="input-group">
+                <label>
+                    <input type="checkbox" id="remember-me"> Remember me
+                </label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p id="error-message"></p>
+        <div class="social-login">
+            <p>Or login with</p>
+            <button class="social-btn google">Google</button>
+            <button class="social-btn facebook">Facebook</button>
+        </div>
+        <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
